@@ -1,0 +1,15 @@
+@layout('invoice/default')
+
+@section('content')
+  <h3>Invoices</h3>
+
+  @if(old('notification'))
+  <div class="alert alert-success">{{ old('notification') }}</div>
+  @endif
+  
+  <ul>
+    @each(invoice in invoices)
+  <li>{{ invoice.title }} - {{ invoice.author }}</li>
+    @endeach
+  </ul>
+@endsection

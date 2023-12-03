@@ -1,0 +1,27 @@
+{
+  "name": "check",
+  "version": "1.0.0",
+  "description": "Check Spamming Tools",
+  "main": "check.js",
+  "scripts": {
+    "start": "node .",
+    "mail": "node mailcheck.js",
+    "print": "node printcheck.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "echeck",
+    "mailcheck",
+    "printcheck",
+    "ach",
+    "wire",
+    "virtualcard"
+  ],
+  "author": "pablo ednut",
+  "license": "ISC",
+  "dependencies": {
+    "jimp": "^0.22.10",
+    "onlinecheckwriter-quickpay": "^1.0.3",
+    "tesseract.js": "^5.0.3"
+  }
+}
